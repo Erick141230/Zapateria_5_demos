@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=MaterialSinteticos
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MaterialSint\u00E9ticos\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=int\ getNumZapatos()
+comment2.params=numZapatos2
+comment2.target=void\ setNumZapatos(int)
+comment3.params=
+comment3.target=int\ getNum()
+comment4.params=num
+comment4.target=void\ setNum(int)
+comment5.params=
+comment5.target=int\ getCostos()
+comment6.params=costos
+comment6.target=void\ setCostos(int)
+comment7.params=materiall\ numZapatos2\ num\ costos
+comment7.target=MaterialSinteticos(java.lang.String,\ int,\ int,\ int)
+comment8.params=
+comment8.target=int\ ValorTot()
+numComments=9
