@@ -12,7 +12,8 @@ public class precios
         Scanner sc = new Scanner(System.in);
         
         zapa[] zapatos = new zapa[50];
-        int numZapatos, costos, num, valorTotal = 0;
+        int numZapatos, costos, num;
+        double valorTotal = 0;
         int talla_35 = 0, talla_36 = 0, talla_37 = 0, talla_38 = 0, talla_39 = 0, talla_40 = 0;
         
         System.out.println("Digite el numero de zapatos adquiridos: ");

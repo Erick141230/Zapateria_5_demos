@@ -2,7 +2,7 @@
 comment0.target=MaterialCaucho
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ MaterialCaucho\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
-comment1.target=int\ getNumZapatos3()
+comment1.target=int\ getNumZapatos()
 comment2.params=numZapatos3
 comment2.target=void\ setNumZapatos(int)
 comment3.params=

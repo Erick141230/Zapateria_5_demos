@@ -12,7 +12,7 @@ public class MaterialCaucho
     private int num;
     private int costos;
     
-    public int getNumZapatos3(){
+    public int getNumZapatos(){
         return numZapatos3;
     }
     public void setNumZapatos(int numZapatos3){

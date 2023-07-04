@@ -1,59 +1,76 @@
 
 /**
- * Write a description of class precios here.
+ * Write a description of class Precios here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
 import java.util.Scanner;
-public class precios
+public class Precios
 {
     static int talla_35 = 0, talla_36 = 0, talla_37 = 0, talla_38 = 0, talla_39 = 0, talla_40 = 0;
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+    public static void main(String [] args) throws Exception{
+        Scanner sc = new Scanner(System.in);    
+        Zapateria miZapate = new Zapateria("76542","Zapatos bendicion","Fontibon");
+        String materiall1 = "", materiall2 = "", materiall3 = "";
+        int valorTotal = 0;
         
-        Zapateria losZapatos = new Zapateria("76542","Zapatos bendicion","Fontibon");
-        String cuer = "Cuero", sinte = "Sinteticos", cauch = "Caucho";
-        int costos, num, valorTotal = 0;
-    
+        System.out.println("Digite el numero de pares de zapatos comprados: ");
+        int numZapatos1 = sc.nextInt();
         
-        System.out.println("Digite el numero de zapatos adquiridos hechos con cuero: ");
-        int numZapatos = sc.nextInt();
         
-        for(int i = 0; i < numZapatos; i++){
+        for(int i = 0; i < numZapatos1; i++){
+            int num, costos;
+            do {
+                System.out.println("Digite el material del zapato 'cuero'");
+                materiall1 = sc.next();
+            }while (materiall1 == "cuero");
             System.out.println("Digite la talla del par de zapatos");
             num = sc.nextInt();
             System.out.println("Digite el costo del par de zapatos");
             costos = sc.nextInt();
             agregarTalla(num);
-            losZapatos.adicionarZapa(cuer, numZapatos, num, costos);
+            miZapate.adicionarZapa(materiall1, numZapatos1, num, costos);
         }
         
-        System.out.println("Digite el numero de zapatos adquiridos hechos sinteticos: ");
+        
+        System.out.println("Digite el numero de pares de zapatos comprados: ");
         int numZapatos2 = sc.nextInt();
+        
         for(int i = 0; i < numZapatos2; i++){
+            int num, costos;
+            do {
+                System.out.println("Digite el material del zapato 'sintetico'");
+                materiall2 = sc.next();
+            } while (materiall2 == "sintetico");
             System.out.println("Digite la talla del par de zapatos");
             num = sc.nextInt();
             System.out.println("Digite el costo del par de zapatos");
             costos = sc.nextInt();
             agregarTalla(num);
-            losZapatos.adicionarZapaSinteticos(sinte, numZapatos2, num, costos);
+            miZapate.adicionarZapaSinteticos(materiall2, numZapatos2, num, costos);
         }
         
         
-        System.out.println("Digite el numero de zapatos adquiridos hechos con caucho: ");
+        System.out.println("Digite el numero de pares de zapatos comprados: ");
         int numZapatos3 = sc.nextInt();
+        
         for(int i = 0; i < numZapatos3; i++){
+            int num, costos;
+            do {
+                System.out.println("Digite el material del zapato 'caucho'");
+                materiall3 = sc.next();
+            } while (materiall3 == "caucho");
             System.out.println("Digite la talla del par de zapatos");
             num = sc.nextInt();
             System.out.println("Digite el costo del par de zapatos");
             costos = sc.nextInt();
             agregarTalla(num);
-            losZapatos.adicionarZapaCaucho(cauch, numZapatos3, num, costos);
+            miZapate.adicionarZapaCaucho(materiall3, numZapatos3, num, costos);
         }
         
-    
-        valorTotal = losZapatos.ValorTotal();
+        
+        valorTotal = miZapate.ValorTotal();
         System.out.println("Se compro "+ talla_35 +" pares de zapatos de la talla 35.");
         System.out.println("Se compro "+ talla_36 +" pares de zapatos de la talla 36.");
         System.out.println("Se compro "+ talla_37 +" pares de zapatos de la talla 37.");
@@ -90,3 +107,5 @@ public class precios
         }
     }
 }
+
+    

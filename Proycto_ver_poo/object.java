@@ -12,7 +12,7 @@ public class object
         Scanner sc = new Scanner(System.in);
   
         zaátps[] zapatos = new zaátps[50];
-        int numZapatos, costos = 0, num;
+        int numZapatos, costos, num;
         double valorTotal = 0;
         int talla_35 = 0, talla_36 = 0, talla_37 = 0, talla_38 = 0, talla_39 = 0, talla_40 = 0;       
         

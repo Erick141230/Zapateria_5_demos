@@ -71,7 +71,7 @@ public class Zapateria
     int ValorTotal(){
         int valorTotal = 0;
         for (int i = 0; i < numZapatoss; i++){
-            valorTotal += cuer[i].ValorTot();
+           valorTotal += cuer[i].ValorTot();
         }
         for (int i = 0; i < numZapatoss2; i++){
             valorTotal += sinte[i].ValorTot();

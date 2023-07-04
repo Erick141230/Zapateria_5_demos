@@ -8,7 +8,7 @@
 import java.util.Scanner;
 public class precios
 {
-    public static void main(String Args[]){
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         
         zapateria losZapatos = new zapateria("76542","Zapatos bendicion","Fontibon");

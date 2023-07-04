@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=MaterialCaucho
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MterialCaucho\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=numZapatos\ num\ materiall3\ costos
+comment1.target=MaterialCaucho(int,\ int,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getMateriall()
+comment3.params=materiall3
+comment3.target=void\ setMateriall(java.lang.String)
+comment4.params=
+comment4.target=int\ ValorTot()
+numComments=5
